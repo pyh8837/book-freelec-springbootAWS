@@ -11,37 +11,19 @@ buildscript {
     }
 }
 
-    apply plugin : 'java'
-    apply plugin : 'eclipse'
-    apply plugin : 'org.springframework.boot'
-    apply plugin : 'io.spring.dependency-management'
+apply plugin : 'java'
+apply plugin : 'eclipse'
+apply plugin : 'org.springframework.boot'
+apply plugin : 'io.spring.dependency-management'
 
-    group 'com.yhpark.book.study'
-    version '1.0-SNAPSHOT'
-
-    repositories {
-        mavenCentral()
-    }
-
-dependencies {
-    compile('org.springframework.boot:spring-boot-starter-web')
-    testCompile('org.springframework.boot:spring-boot-starter-test')
-}
-
-
-
-
-
+group 'com.yhpark.book.study'
+version '1.0-SNAPSHOT'
 
 repositories {
     mavenCentral()
 }
 
 dependencies {
-    testImplementation 'org.junit.jupiter:junit-jupiter-api:5.7.0'
-    testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.7.0'
-}
-
-test {
-    useJUnitPlatform()
+    compile('org.springframework.boot:spring-boot-starter-web')
+    testCompile('org.springframework.boot:spring-boot-starter-test')
 }

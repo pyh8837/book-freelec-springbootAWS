@@ -1,0 +1,2 @@
+com/yhpark/springaws/web/HelloControllerTest.java
+ com.yhpark.springaws.web.HelloControllerTest
